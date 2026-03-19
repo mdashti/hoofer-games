@@ -1,0 +1,11 @@
+{
+  "name": "hoofer-games",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "hot-take": "cd apps/hot-take && npx expo start",
+    "turf-war": "cd apps/turf-war && npx expo start",
+    "hot-take:web": "cd apps/hot-take && npx expo start --web",
+    "turf-war:web": "cd apps/turf-war && npx expo start --web"
+  }
+}

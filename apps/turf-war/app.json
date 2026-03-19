@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Turf War",
+    "slug": "turf-war",
+    "scheme": "turfwar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F0"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hoofergames.turfwar"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFF8F0"
+      },
+      "package": "com.hoofergames.turfwar"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
