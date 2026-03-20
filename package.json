@@ -6,6 +6,8 @@
     "hot-take": "cd apps/hot-take && npx expo start",
     "turf-war": "cd apps/turf-war && npx expo start",
     "hot-take:web": "cd apps/hot-take && npx expo start --web",
-    "turf-war:web": "cd apps/turf-war && npx expo start --web"
+    "turf-war:web": "cd apps/turf-war && npx expo start --web",
+    "maybe-opposite": "cd apps/maybe-opposite && npx expo start",
+    "maybe-opposite:web": "cd apps/maybe-opposite && npx expo start --web"
   }
 }
