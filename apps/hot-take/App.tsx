@@ -1,5 +1,5 @@
 import React, { useReducer, useRef, useEffect } from 'react';
-import { StyleSheet, Animated, View, StatusBar } from 'react-native';
+import { StyleSheet, Animated, View, StatusBar, Platform } from 'react-native';
 import {
   theme,
   GameShell,
@@ -471,6 +471,7 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: theme.colors.background,
+    ...(Platform.OS === 'web' ? { height: '100vh' as any } : {}),
   },
   screen: {
     flex: 1,

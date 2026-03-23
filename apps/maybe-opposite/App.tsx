@@ -1,5 +1,5 @@
 import React, { useReducer, useRef, useEffect, useCallback } from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
+import { Animated, StyleSheet, View, Platform } from 'react-native';
 import { theme } from '@hoofer-games/shared';
 import type { Player } from '@hoofer-games/shared';
 import type { AppPhase, GameMode, MaybeOppositeConfig } from './src/types';
@@ -214,6 +214,7 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: theme.colors.background,
+    ...(Platform.OS === 'web' ? { height: '100vh' as any } : {}),
   },
   screenContainer: {
     flex: 1,

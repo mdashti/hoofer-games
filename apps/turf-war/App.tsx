@@ -1,5 +1,5 @@
 import React, { useReducer, useRef, useEffect, useCallback } from 'react';
-import { Animated, StyleSheet } from 'react-native';
+import { Animated, StyleSheet, View, Platform } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import type { Player } from '@hoofer-games/shared';
 import type { TurfWarPhase, TurfWarConfig, RoundScore } from './src/types';
@@ -212,5 +212,6 @@ export default function App() {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
+    ...(Platform.OS === 'web' ? { height: '100vh' as any } : {}),
   },
 });

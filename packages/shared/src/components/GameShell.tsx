@@ -8,6 +8,8 @@ import {
   Animated,
   ScrollView,
   StatusBar,
+  Platform,
+  Dimensions,
 } from 'react-native';
 import { theme } from '../theme';
 
@@ -159,5 +161,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: theme.spacing.md,
     paddingBottom: theme.spacing.xl,
     alignItems: 'center',
+    ...(Platform.OS === 'web' ? { minHeight: '100%' } : {}),
   },
 });
