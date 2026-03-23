@@ -1,7 +1,10 @@
 {
   "name": "hoofer-games",
   "private": true,
-  "workspaces": ["packages/*", "apps/*"],
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "hot-take": "cd apps/hot-take && npx expo start",
     "turf-war": "cd apps/turf-war && npx expo start",
@@ -9,5 +12,11 @@
     "turf-war:web": "cd apps/turf-war && npx expo start --web",
     "maybe-opposite": "cd apps/maybe-opposite && npx expo start",
     "maybe-opposite:web": "cd apps/maybe-opposite && npx expo start --web"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~55.0.6",
+    "expo": "^55.0.8",
+    "react-dom": "19.2.0",
+    "react-native-web": "^0.21.0"
   }
 }
